@@ -21,7 +21,7 @@
 |---|---|
 | **改动`main`必须开 PR** | 你的改动必须先推到一个分支, 再开 PR。直接push到 `main` 会被拒 |
 | **0 人批准即可合并PR** | 你自己就能合自己的 PR,可以等待其他同学也看看再合 |
-| **合并后自动删分支** |  |
+| **合并后自动删除远端分支** | 建议你删掉对应的引用和本地分支 |
 
 ---
 
@@ -48,6 +48,14 @@ git push -u origin w3/version-edges
 
 6. 打开 GitHub, 点 **Compare & pull request**, 填写PR信息, 提交PR
 7. 自己检查后, 可以选择等待几天时间让其他同学也看看, 最终确认合并后, 点 **Squash and merge**
+8. 一个建议: PR被合并后,
+    ```bash
+    # 删远端分支引用
+    git fetch -p
+
+    # 强删本地分支
+    git branch -D branch-name
+    ```
 
 ---
 
