@@ -48,12 +48,12 @@ git push -u origin w3/version-edges
 
 6. 打开 GitHub, 点 **Compare & pull request**, 填写PR信息, 提交PR
 7. 自己检查后, 可以选择等待几天时间让其他同学也看看, 最终确认合并后, 点 **Squash and merge**
-8. 一个建议: PR被合并后,
+8. 建议: PR被合并后,
     ```bash
-    # 删远端分支引用
+    # 清理本地残留的引用
     git fetch -p
 
-    # 强删本地分支
+    # 强删本地残留分支
     git branch -D branch-name
     ```
 
